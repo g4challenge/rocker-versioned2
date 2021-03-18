@@ -1,12 +1,12 @@
 version: '3'
 services:
   shiny-devel:
-    image: rocker/shiny:devel
+    image: g4challenge/shiny:devel
     build:
       context: ..
       dockerfile: dockerfiles/Dockerfile_shiny_devel
   shiny-verse-devel:
-    image: rocker/shiny-verse:devel
+    image: g4challenge/shiny-verse:devel
     depends_on:
     - shiny-devel
     build:

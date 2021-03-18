@@ -1,7 +1,7 @@
 version: '3'
 services:
   geospatial-dev-osgeo:
-    image: rocker/geospatial:dev-osgeo
+    image: g4challenge/geospatial:dev-osgeo
     build:
       context: ..
       dockerfile: dockerfiles/Dockerfile_geospatial_dev-osgeo
