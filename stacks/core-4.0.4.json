@@ -21,7 +21,7 @@
   },
   {
     "IMAGE": "rstudio",
-    "FROM": "rocker/r-ver:4.0.4",
+    "FROM": "g4challenge/r-ver:4.0.4",
     "ENV": {
       "S6_VERSION": "v2.1.0.2",
       "RSTUDIO_VERSION": "latest",
@@ -33,12 +33,12 @@
   },
   {
     "IMAGE": "tidyverse",
-    "FROM": "rocker/rstudio:4.0.4",
+    "FROM": "g4challenge/rstudio:4.0.4",
     "RUN": "/rocker_scripts/install_tidyverse.sh"
   },
   {
     "IMAGE": "verse",
-    "FROM": "rocker/tidyverse:4.0.4",
+    "FROM": "g4challenge/tidyverse:4.0.4",
     "ENV": {
       "CTAN_REPO": "http://mirror.ctan.org/systems/texlive/tlnet", 
       "PATH": "/usr/local/texlive/bin/x86_64-linux:$PATH"
