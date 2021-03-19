@@ -5,7 +5,7 @@
 {
     "IMAGE": "binder",
     "TAG": "4.0.4",
-    "FROM": "rocker/geospatial:4.0.4",
+    "FROM": "g4challenge/geospatial:4.0.4",
     "ENV": {
       "NB_USER": "rstudio"
            },
